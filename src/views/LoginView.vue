@@ -1,12 +1,12 @@
 <template>
     <div id="userLogin">
-        <div id="Slogan">
+        <div id="slogan">
             <h2>
                 Project Collaboration Made Easy
             </h2>
         </div>
         <h1 id="appTitle">
-            Syngergy
+            Synergy
         </h1>
         <div id="formCont">
             <v-form id="loginForm" v-model="formValidity">
@@ -101,7 +101,7 @@ import PageFooter from '../components/PageFooter.vue'
             },
 
             EnterButtonSubmits() {
-                this.loginReq();
+                this.userLogin(this.email, this.password);
             }
         }
     
@@ -113,7 +113,7 @@ import PageFooter from '../components/PageFooter.vue'
         width: 100%;
         height: 100 vh;
         display: grid;
-        grid-template-rows: 10vh 10vh 30vh 30vh 12vh;
+        grid-template-rows: 15vh 10vh 30vh 30vh 15vh;
         align-items: center;
         justify-items: center;
         background-color: beige;
@@ -126,7 +126,7 @@ import PageFooter from '../components/PageFooter.vue'
         z-index: 2;
     }
 
-    #Slogan {
+    #slogan {
         display: grid;
         justify-items: center;
         z-index: 2;
@@ -170,7 +170,7 @@ import PageFooter from '../components/PageFooter.vue'
     #footer{
         grid-row: 5;
         position: relative;
-        bottom: -1vh
+        bottom: -2vh
     }
 }
 
